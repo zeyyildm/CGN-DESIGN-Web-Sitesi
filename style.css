@@ -1,0 +1,359 @@
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pembeyer {
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    background-color: #f1d6d5;
+    display: flex;
+    align-items: center;
+}
+
+.yazi {
+    color: whitesmoke;
+    font-size: 2em;
+    font-family: "Orbitron", sans-serif;
+    margin: 0;
+}
+
+#form {
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-top: 1px solid rgb(143, 116, 116, 0.2);
+    border-bottom: 1px solid rgb(143, 116, 116, 0.2);
+    justify-content: center;
+    margin-left: 500px;
+}
+
+.geri-ok {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .geri-ok i {
+    font-size: 20px;
+  }
+  
+
+#aramaText {
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0,0.2);
+    width: 500px;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border-style: none;
+    margin-left: 5px;
+}
+
+.icon-button:hover {
+    opacity: 0.5;
+}
+
+.urunler-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 200px;
+}
+
+.urun-listesi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.urunler {
+    position: relative;
+    margin: 40px;
+    border-radius: 5px;
+    background-color: #fff9f5;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.urunler img {
+    width: 300px;
+    height: 400px;
+    z-index:1;
+}
+
+
+.logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 600px;
+}
+
+.urun-fiyat {
+    width: 80px;
+    height: 50px;
+    border: 1px solid rgba(9, 9, 9, 0.1);
+    margin-top: 10px;
+    font-size: 1.0em;
+    color: rgba(9, 9, 9, 0.5);
+    text-align: center;
+    position: relative;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cizili {
+    text-decoration: line-through;
+    color: rgba(9, 9, 9, 0.5);
+}
+
+.urun-isim {
+    border: 1px solid rgba(9, 9, 9, 0.1);
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: -50px;
+    margin-left: 45px;
+    text-align: center;
+    font-family: "Advent Pro", sans-serif;
+}
+
+.icon2-button{
+    position: absolute; /* İkonu kesin konumlandırmak için */
+    bottom: 10px; /* Fotoğrafın altından uzaklığı */
+    right: 10px; /* Fotoğrafın sağından uzaklığı */
+    width: 40px; /* İkonun boyutu */
+    height: 40px;
+    color: black; /* İkon rengi */
+    background-color: white; /* Buton arka plan rengi */
+    border: none; /* Kenarlık kaldırıldı */
+    border-radius: 50%; /* Yuvarlak buton */
+    display: flex; /* İçindeki ikonu ortalamak için */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    z-index: 10;
+}
+
+.icon2-button i {
+    transition: transform 0.2s ease; /* Geçiş efekti için */
+}
+
+.icon2-button:hover i {
+    transform: scale(1.2); /* İkonu %20 büyüt */
+}
+
+.icon3-button{
+
+    bottom: 40px; /* Fotoğrafın altından uzaklığı */
+    right: 40px; /* Fotoğrafın sağından uzaklığı */
+    width: 50px; /* İkonun boyutu */
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0,0.1);
+    color: black; /* İkon rengi */
+    background-color: white; /* Buton arka plan rengi */
+    border-radius: 50%; /* Yuvarlak buton */
+    display: flex; /* İçindeki ikonu ortalamak için */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    z-index: 10;
+
+    right: 3;
+    margin-left: auto;
+   
+}
+
+.cardTab{
+    position: relative;
+    width: 400px;
+    background-color: #fff9f5;
+    color: black;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: none;
+    z-index: 20;
+    padding-bottom: 5px;
+}
+
+.cardTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+
+.cardTab .close{
+    position: absolute;
+    background-color: #fff9f5;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    width: 20x;
+    height: 20px;
+    margin-top: 5px;
+    right: 7px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Yarım saydam siyah arka plan */
+    display: none; /* Başlangıçta gizli */
+    z-index: 10; /* Diğer içeriklerin üstünde olmasını sağlar */
+}
+
+.sepetYazisi{
+   font-size: 30px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sepettekiEsyalar li{
+    background-color: #fff9f5;
+    color: black;
+    border: none;
+    max-height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.sepetCizgi{
+    background-color: rgb(0, 0, 0,0.4);
+    width: 300px;
+    height: 2px;
+    margin-left: 60px;
+}
+
+.toplamFiyat{
+    background-color: #fff9f5;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    height: 10px;
+    margin-left: 250px;
+    margin-top: 5px;
+}
+
+.sepettekiEsyalar{
+    margin-top: 20px;
+    width: 400px;
+    height: 600px;
+}
+
+.fas.fa-minus{
+    color:  rgb(0, 0, 0,0.4);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.fas.fa-plus{
+    cursor: pointer;
+    margin-right:10px ;
+}
+
+.fas.fa-minus:hover{
+    transform: scale(1.2);
+}
+
+.fas.fa-plus:hover{
+    transform: scale(1.2);
+}
+
+.sepet-item{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px; /* Sağdan boşluk */
+    margin-bottom: 10px;
+}
+
+.indirimKuponlari{
+    background-color: #fff9f5;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.indirimKuponlari input{
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.indirimKuponlari button{
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1d6d5;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.indirimKuponlari button:hover{
+    background-color: #f1d6d5;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: scale(1.1);
+}
+.indirimKuponlari button:active{
+    background-color: #f1d6d5;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: scale(0.9);
+}
+
+
+
+
+
+
